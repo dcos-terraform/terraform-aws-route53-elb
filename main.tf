@@ -8,7 +8,7 @@
  *
  *```hcl
 * module "elb_masters" {
-*  source               = "dcos-terraform/route53-elb-alias/aws"
+*  source               = "dcos-terraform/route53-elb/aws"
 *  cluster_name         = "dcos-cluster"
 *  domain               = "domain.com"
 *  aws_zone_id          = "ABC123456XYZ"
