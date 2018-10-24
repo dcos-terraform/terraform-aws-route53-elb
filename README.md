@@ -33,5 +33,5 @@ module "elb_masters" {
 
 | Name | Description |
 |------|-------------|
-| public_fqdns |  |
+| public_fqdns | The alias name of the Masters ELB |
 
