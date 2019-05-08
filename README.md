@@ -22,7 +22,7 @@ module "elb_masters" {
 |------|-------------|:----:|:-----:|:-----:|
 | aws\_target\_zone\_id | The Zone ID of the ELB | string | n/a | yes |
 | aws\_zone\_id | The Route 53 Zone ID to be used | string | n/a | yes |
-| cluster\_name | Cluster name all resources get named and tagged with | string | n/a | yes |
+| cluster\_name | Name of the DC/OS cluster | string | n/a | yes |
 | domain | The domain of your Route 53 Zone | string | n/a | yes |
 | aws\_lb\_alias\_name | Alias for the LB for the Master Address if specified | string | `""` | no |
 | evaluate\_target\_heatlh | Route 53 to determine whether to respond to DNS queries using this resource record | string | `"false"` | no |
@@ -32,5 +32,5 @@ module "elb_masters" {
 
 | Name | Description |
 |------|-------------|
-| public\_fqdns | The alias name of the Masters ELB |
+| public\_fqdns | List of Public FQDNs |
 
